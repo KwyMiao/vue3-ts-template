@@ -1,32 +1,21 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import Layout from '@/layout/index.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <Layout />
 </template>
 
-<style>
-@import './assets/base.css';
+<style lang="scss">
+// #app {
+//   max-width: 100vw;
+//   max-height: 100vh;
+//   margin: 0 auto;
+//   padding: 2rem;
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
-}
+//   font-weight: normal;
+// }
+/* @import './assets/base.css';
 
 header {
   line-height: 1.5;
@@ -77,5 +66,5 @@ a,
   .logo {
     margin: 0 2rem 0 0;
   }
-}
+} */
 </style>
