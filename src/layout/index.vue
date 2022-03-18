@@ -1,39 +1,18 @@
 <script setup lang="ts">
-import Navbar from "./components/Navbar.vue";
-import AppMain from "./components/AppMain.vue";
-import Sidebar from "./components/Sidebar/index.vue";
+import { RouterLink, RouterView } from 'vue-router'
+import Navbar from './components/Navbar.vue'
+
 </script>
 
 <template>
-  <div class="common-layout">
-    <el-container>
-      <Sidebar></Sidebar>
-      <el-container>
-        <el-header>
-          <Navbar></Navbar>
-        </el-header>
-        <el-main>
-          <AppMain></AppMain>
-        </el-main>
-      </el-container>
-    </el-container>
+  <div>
+    <Navbar></Navbar>
   </div>
+  <RouterView />
 </template>
 
-<!--<template>
-  <div class="common-layout">
-    <el-container>
-      <el-header>
-        <Navbar></Navbar>
-      </el-header>
-      <el-container>
-        <Sidebar></Sidebar> 
-        <el-main>
-          <AppMain></AppMain>
-        </el-main>
-      </el-container>
-    </el-container>
-  </div>
-</template> -->
 
-<style></style>
+
+<style>
+
+</style>
