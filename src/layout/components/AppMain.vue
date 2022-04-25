@@ -7,4 +7,8 @@ import { RouterView } from "vue-router";
 export default {};
 </script>
 
-<style></style>
+<style>
+main {
+  padding: 20px;
+}
+</style>

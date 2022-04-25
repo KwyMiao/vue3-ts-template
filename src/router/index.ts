@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
-
 import Home from "@/views/home/index.vue";
+
+const base_url = import.meta.env.BASE_URL;
 
 const staticRoutes = [
   {
@@ -19,7 +20,7 @@ const staticRoutes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(base_url),
   routes: staticRoutes,
 });
 
